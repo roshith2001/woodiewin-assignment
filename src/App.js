@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import styles from './styles/styles';
+import Profile from './components/Profile/Profile';
+import userData from './Chandra Matrimony/Data/UserData';
+import ProfilesLoader from './components/Sections/ProfilesLoader';
+import HeadSection from './components/Sections/HeadSection';
+import FooterMenu from './components/FooterMenu/FooterMenu';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <HeadSection userData={userData}/>
+      <ProfilesLoader userData={userData}/>
+      <FooterMenu />
     </div>
   );
 }

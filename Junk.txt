@@ -1,0 +1,42 @@
+<MenuButton 
+        buttonColor='red'
+        buttonText='Interests'
+        borderColor={styles.colors.offGrey}
+        textColor={styles.colors.offGrey}
+        activeColor={styles.gradient.violet}
+        handleClick={handleMenuButtonClick}
+        buttonActive = {menuButtonActive}
+        buttonName='menuButton1'
+      />
+      <IconButton 
+        buttonIcon={Heart}
+        buttonName='iconButtonLike'
+        textColor={styles.colors.black}
+        buttonStyle='dark'
+      />
+
+       <ProfileBanner 
+        bannerText='New Member'
+        bannerType='headBanner'
+      />
+      <ProfileBanner 
+        bannerText='Active 13 days ago'
+      />
+
+            <InfoBanner 
+        bannerText='2h ago'
+        bannerType='timeBanner'
+      />
+      <InfoBanner 
+        bannerText='Never Married'
+      />
+      <ProgressBar />
+      <Text 
+        text='Rishikesh Nair' 
+        textColor={styles.colors.buttongrey}
+        textSize='22px'
+        textWeight='500'
+      />
+            <Text 
+        text='Uthradam' 
+      />
